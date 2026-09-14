@@ -1,16 +1,21 @@
+:root {
+    --primary-color: rgb(58, 121, 193);
+    --padding: 1rem
+}
+
 nav {
-    background-color: rgb(58, 121, 193);
-    padding: 10px;
+    background-color: var(--primary-color);
+    padding: var(--padding);
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: var(--padding);
 }
 
 h1 {
-    color: rgb(58, 121, 193);
+    color: var(--primary-color);
 }
 
 main {
@@ -29,9 +34,9 @@ aside {
     width: 20rem;
     margin: 2rem;
     border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
+    padding: var(--padding);
     background-color: #eee;
-    color: rgb(58, 121, 193);
+    color: var(--primary-color);
     text-align: center;
 }
 
@@ -45,7 +50,7 @@ p {
 }
 
 footer {
-    margin-top: 1rem;
-    border-top: 3px solid rgb(58, 121, 193);
+    margin-top: var(--padding);
+    border-top: 3px solid var(--primary-color);
     text-align: center
 }
