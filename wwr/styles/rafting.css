@@ -63,7 +63,7 @@ section p {
     color: var(--primary-color)
 }
 
-article {
+.hero article {
     position: absolute;
     top: 7rem;
     background-color: var(--secondary-color);
