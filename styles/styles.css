@@ -12,22 +12,42 @@
 nav {
     background-color: var(--primary-color);
     padding: var(--padding);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color: white;
     display: block;
     padding: var(--padding);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+header,
+footer,
+.grid {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
 }
 
 h1 {
     color: var(--primary-color);
     padding-top: var(--padding);
     padding-left: var(--padding);
+    border-bottom: 3px solid var(--primary-color);
 }
 
 main {
-    max-width: 840px;
+    grid-column: 2;
+    margin: 1rem;
 }
 
 main img {
@@ -42,13 +62,15 @@ main img {
 
 aside {
     width: 20rem;
-    text-align: center;
     position: relative;
+    grid-column: 1;
+    grid-row: 1;
 }
 
 aside img {
     width: 200px;
     height: auto;
+    margin-left: 2rem;
 }
 
 aside h2 {

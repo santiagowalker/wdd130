@@ -21,10 +21,12 @@ body {
 
 .item1 {
     min-height: 100px;
+    justify-content: flex-start;
 }
 
 .item2 {
     min-height: 200px;
+    justify-content: flex-end;
 }
 
 .item3 {
