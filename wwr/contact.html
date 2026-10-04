@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Splash White Water Rafting</title>
+    <meta name="description"
+      content="Contact Splash White Water Rafting for trip questions, reservations, group bookings, and general information about our rafting adventures.">
+    <meta name="author" content="Santiago Walker">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Rafting Company Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <div class="info">
+            <h1>Splash White Water Rafting</h1>
+            <p>101 Payette River Road</p>
+            <p>Horseshoe Bend, Idaho</p>
+            <p>(208) 555-0147</p>
+            <p>info@splashrafting.com</p>
+        </div>
+        <div class="map-form">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14751.143962297725!2d-116.20254975907129!3d43.90536734902562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54af10c2a1e987ed%3A0xb8f5f52c69fd4316!2s101%20Payette%20River%20Ave%2C%20Horseshoe%20Bend%2C%20ID%2083629%2C%20EUA!5e0!3m2!1spt-BR!2sar!4v1790958992517!5m2!1spt-BR!2sar"
+              width="600" height="450" allowfullscreen="" loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            <form>
+                <div class="form-grid">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-grid">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <fieldset class="form-grid">
+                        <p>Message Purpose</p>
+                        <div>
+                            <div class="radio">
+                                <input type="radio" id="inquiry" name="purpose" value="inquiry">
+                                <label for="inquiry">General Inquiry</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" id="reservation" name="purpose"
+                                  value="reservation">
+                                <label for="reservation">Reservation Question</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" id="suggestion" name="purpose"
+                                  value="suggestion">
+                                <label for="suggestion">Website Suggestion</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" id="subscription" name="subscription">
+                    <label for="subscription">Please subscribe me to the monthly newsletter</label>
+                </div>
+                <button type="submit">Get in Touch!</button>
+        </div>
+        </form>
+        <section>
+            <h2>We Are Here to Serve You!</h2>
+            <div class="employees">
+                <figure>
+                    <img src="images/employee1.jpg" alt="rafting guide on the water">
+                    <figcaption>Alex — Lead River Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="rafting guide with the equipment">
+                    <figcaption>Taylor — Adventure Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="happy rafting guide">
+                    <figcaption>Jordan — Safety Coordinator</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©️2026 | Splash White Water Rafting |Santiago Walker </p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook-bw.svg" alt="Facebook Icon">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin-bw.svg" alt="Linkedin Icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram-bw.svg" alt="Instagram Icon">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
