@@ -1,6 +1,7 @@
 /* General Styles */
 :root {
     --primary-color: #1B3A5C;
+    --primary-rgb: 27 58 92;
     --secondary-color: #F0F0EE;
     --accent1-color: #2E86AB;
     --accent2-color: #FFFFFF;
@@ -51,6 +52,155 @@ nav a {
     color: var(--accent2-color);
     font-size: 1rem;
     font-weight: 700;
+}
+
+/* Homepage */
+.home-hero {
+    position: relative;
+}
+
+.home-hero img {
+    width: 100%;
+    height: auto;
+}
+
+.home-hero h1 {
+    color: var(--primary-color);
+    position: absolute;
+    left: 200px;
+    top: 2rem;
+    font-size: 3rem;
+}
+
+.cta a {
+    display: block;
+    text-decoration: none;
+    position: absolute;
+    background-color: rgb(var(--primary-rgb)/ 80%);
+    color: var(--accent2-color);
+    padding: 1rem 1.5rem;
+    width: fit-content;
+    border-radius: 1.5rem;
+    border: 1px solid var(--accent2-color);
+    z-index: 2;
+    bottom: 5rem;
+    left: 6rem;
+    font-size: 1.75rem;
+}
+
+.home-hero:after {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    height: 10rem;
+    content: '';
+    background: linear-gradient(transparent, var(--primary-color));
+    z-index: 1;
+}
+
+.background {
+    background-color: var(--primary-color);
+    margin-top: -31px;
+    position: relative;
+    padding: 5rem 0 0 0;
+}
+
+.purpose-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    background-color: var(--secondary-color);
+    padding: 1rem 1rem 3rem 1rem;
+}
+
+.purpose-grid h2 {
+    grid-column: 1/3;
+    background-color: transparent;
+    color: var(--primary-color);
+    font-size: 2rem;
+    padding: 2rem 0 2rem 0;
+}
+
+.purpose-grid img {
+    width: 400px;
+    height: 250px;
+    border-radius: .5rem;
+}
+
+.left-column {
+    border-right: 3px solid var(--primary-color);
+    padding: 0 2rem 1rem 1rem;
+}
+
+.right-column {
+    padding: 0 1rem 1rem 1rem;
+}
+
+.purpose-grid h3 {
+    color: var(--primary-color);
+    padding: 1rem 1rem 0 1rem;
+}
+
+.purpose-grid p {
+    padding: 0;
+}
+
+.newsletter-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+    padding-bottom: 0;
+}
+
+.newsletter-content {
+    padding: 1rem 1rem 1rem 2rem;
+}
+
+.newsletter-content h2 {
+    background: none;
+    text-align: left;
+    font-size: 2rem;
+    padding-bottom: 0;
+    padding-left: 1rem;
+    padding-right: 0;
+}
+
+.newsletter-content p {
+    max-width: 450px;
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+.newsletter-content form {
+    background: none;
+    color: var(--accent2-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+
+.newsletter-content input {
+    padding: 4px;
+    min-width: 200px;
+}
+
+.newsletter-content button {
+    padding: .5rem 1rem .5rem 1rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+}
+
+.newsletter-img img {
+    width: 100%;
+    height: auto;
+    opacity: .20;
+    mask-image: linear-gradient(to right, transparent, black 25%);
 }
 
 /* About Us Page */
