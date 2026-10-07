@@ -5,8 +5,11 @@
     --secondary-color: #F0F0EE;
     --accent1-color: #2E86AB;
     --accent2-color: #FFFFFF;
-    --heading-font: "Times New Roman", "Georgia", serif;
-    --body-font: Arial, Helvetica, sans-serif;
+    --heading-font: "Source Sans 3",
+        Arial,
+        Helvetica,
+        sans-serif;
+    --body-font: Arial, Helvetica;
 }
 
 * {
@@ -67,7 +70,7 @@ nav a {
 .home-hero h1 {
     color: var(--primary-color);
     position: absolute;
-    left: 200px;
+    left: 175px;
     top: 2rem;
     font-size: 3rem;
 }
@@ -296,6 +299,181 @@ section img {
     display: block;
     width: 100%;
     height: auto;
+}
+
+/* Trips Page */
+
+.trip-hero {
+    position: relative;
+}
+
+.trip-hero img {
+    width: 100%;
+    height: auto;
+}
+
+.trip-hero h1 {
+    position: absolute;
+    color: var(--accent2-color);
+    left: 150px;
+    top: 155px;
+    font-size: 3rem;
+}
+
+.trip-hero p {
+    position: absolute;
+    color: var(--accent2-color);
+    text-align: center;
+    max-width: 475px;
+    left: 150px;
+    top: 190px;
+}
+
+.trip-hero:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 9rem;
+    content: '';
+    background: linear-gradient(transparent, var(--secondary-color));
+    z-index: 1;
+}
+
+.trip-section {
+    background-color: var(--secondary-color);
+    position: relative;
+    padding-top: 2rem;
+}
+
+.trip-section h2 {
+    background: none;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+}
+
+.trip {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 3rem;
+    padding: 2rem;
+    align-items: center;
+}
+
+.trip img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: .25rem;
+}
+
+.trip-text {
+    color: var(--primary-color);
+    padding-left: 1rem;
+}
+
+.trip-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.trip-text p {
+    margin-top: 0;
+    line-height: 1.3;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.reverse {
+    grid-template-columns: 2fr 3fr;
+    background-color: #E7EEF3;
+}
+
+.reverse img {
+    order: 2;
+}
+
+.reverse .trip-text {
+    order: 1;
+}
+
+.trip-table-section {
+    background-color: var(--secondary-color);
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+}
+
+.trip-table-section h2 {
+    background: none;
+    color: var(--primary-color);
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.trip-table {
+    margin: auto auto;
+    width: 700px;
+    border-collapse: collapse;
+
+}
+
+.trip-table thead {
+    background-color: var(--primary-color);
+}
+
+.trip-table th {
+    padding: .5rem 1rem .5rem 1rem;
+}
+
+.trip-table tr:nth-child(even) {
+    background-color: #E7EEF3;
+}
+
+.trip-table td {
+    padding: .5rem 1rem .5rem 1rem;
+    text-align: center;
+    border: 1px solid var(--accent2-color);
+}
+
+.trip-table tbody {
+    color: var(--primary-color);
+}
+
+.contact-cta {
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: 2rem 1rem 2rem 1rem;
+
+}
+
+.contact-cta h2 {
+    background: none;
+    text-align: left;
+    grid-column: 1;
+    padding: 0;
+    margin: .5rem;
+}
+
+.contact-cta p {
+    grid-column: 1;
+    margin: .5rem;
+    padding: 0;
+}
+
+.contact-cta a {
+    display: block;
+    text-decoration: none;
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+    padding: 1rem 1.5rem;
+    width: fit-content;
+    border-radius: 1.5rem;
+    border: 1px solid var(--accent2-color);
+    font-size: 1rem;
+    grid-column: 2;
+    justify-self: center;
+    align-self: center;
 }
 
 /* Contact Us Page */
