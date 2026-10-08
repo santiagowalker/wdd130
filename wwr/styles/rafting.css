@@ -9,7 +9,7 @@
         Arial,
         Helvetica,
         sans-serif;
-    --body-font: Arial, Helvetica;
+    --body-font: Arial, Helvetica, sans-serif;
 }
 
 * {
